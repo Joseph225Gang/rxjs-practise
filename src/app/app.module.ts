@@ -3,10 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
+import * as $ from "jquery";
+import { LiveSearchComponent } from './live-search/live-search.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AutoCompleteComponent,
+    LiveSearchComponent
   ],
   imports: [
     BrowserModule,
