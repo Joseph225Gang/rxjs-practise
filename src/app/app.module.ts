@@ -7,6 +7,7 @@ import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { LiveSearchComponent } from './live-search/live-search.component';
 import { LoginModule } from './login/login.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductModule } from './product/product.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   imports: [
     BrowserModule,
     LoginModule,
-    AppRoutingModule
+    ProductModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
