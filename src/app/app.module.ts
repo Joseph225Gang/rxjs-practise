@@ -8,20 +8,22 @@ import { LiveSearchComponent } from './live-search/live-search.component';
 import { LoginModule } from './login/login.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductModule } from './product/product.module';
+import {DashboardModule} from './dashboard/dashboard.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AutoCompleteComponent,
-    LiveSearchComponent,
+    LiveSearchComponent, 
     PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
-    LoginModule,
-    ProductModule,
-    AppRoutingModule,
+    LoginModule,         
+    ProductModule,  
+    DashboardModule, 
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
