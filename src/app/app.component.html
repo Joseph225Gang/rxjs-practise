@@ -1,9 +1,9 @@
 <h1>RXJS Sample</h1>
 <ul>
-  <li><a [routerLink]="['/autocomplete']">AutoComplete</a></li>
-  <li><a [routerLink]="['/liveSearch']">Live Search</a></li>
-  <li><a [routerLink]="['/login']">Login</a></li>
-  <li><a [routerLink]="['/product']">Product</a></li>
-  <li><a [routerLink]="['/dashboard']">Dashboard</a></li>
+  <li><a [routerLink]="['/autocomplete']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact : true}">AutoComplete</a></li>
+  <li><a class="nav-link" [routerLink]="['/liveSearch']" routerLinkActive="active">Live Search</a></li>
+  <li><a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Login</a></li>
+  <li><a class="nav-link" [routerLink]="['/product']" routerLinkActive="active">Product</a></li>
+  <li><a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a></li>
 </ul>
 <router-outlet></router-outlet>
