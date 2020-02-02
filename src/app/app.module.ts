@@ -9,6 +9,7 @@ import { LoginModule } from './login/login.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductModule } from './product/product.module';
 import {DashboardModule} from './dashboard/dashboard.module';
+import {MessageModule} from './message/message.module';
 
 
 @NgModule({
@@ -16,14 +17,15 @@ import {DashboardModule} from './dashboard/dashboard.module';
     AppComponent,
     AutoCompleteComponent,
     LiveSearchComponent, 
-    PageNotFoundComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     LoginModule,         
     ProductModule,  
     DashboardModule, 
-    AppRoutingModule
+    AppRoutingModule,
+    MessageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

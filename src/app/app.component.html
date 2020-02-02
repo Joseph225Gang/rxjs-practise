@@ -7,3 +7,11 @@
   <li><a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a></li>
 </ul>
 <router-outlet></router-outlet>
+<div class="container">
+  <div class="row">
+      <ul>
+        <li><button class="nav-link" (click)="goToMessage()" routerLinkActive="active">Messages</button></li>
+      </ul>
+      <router-outlet name="popup"></router-outlet>
+    </div>
+</div>
