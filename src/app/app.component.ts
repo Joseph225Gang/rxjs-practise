@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router} from '@angular/router';
+import { AuthService } from '../app/user/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { Router} from '@angular/router';
 export class AppComponent {
   title = 'rxjs-sample';
 
-  constructor(private router: Router)
+  constructor(private router: Router,private authService: AuthService)
   {
 
   }
@@ -18,4 +19,9 @@ export class AppComponent {
     alert('messages');
     this.router.navigate([{outlets:{popup:['messages']}}]);
   }
+
+  login(){
+    this.authService.login("admin");
+  }
+
 }

@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProductModule } from './product/product.module';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {MessageModule} from './message/message.module';
+import {UserComponent} from './user/user.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import {MessageModule} from './message/message.module';
     AppComponent,
     AutoCompleteComponent,
     LiveSearchComponent, 
+    UserComponent,
     PageNotFoundComponent
   ],
   imports: [

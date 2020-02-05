@@ -1,10 +1,13 @@
 <h1>RXJS Sample</h1>
+<button (click)="login()">Login</button>
+<br>
 <ul>
   <li><a [routerLink]="['/autocomplete']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact : true}">AutoComplete</a></li>
   <li><a class="nav-link" [routerLink]="['/liveSearch']" routerLinkActive="active">Live Search</a></li>
   <li><a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Login</a></li>
   <li><a class="nav-link" [routerLink]="['/product']" routerLinkActive="active">Product</a></li>
   <li><a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a></li>
+  <li><a class="nav-link" [routerLink]="['/user']" routerLinkActive="active">User</a></li>
 </ul>
 <router-outlet></router-outlet>
 <div class="container">
